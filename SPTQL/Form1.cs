@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,6 +14,24 @@ namespace SPTQL
         public Form1()
         {
             InitializeComponent();
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            // Load the delaySeconds setting
+            textBox1.Text = Properties.Settings.Default.DelaySeconds.ToString();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            // Save the delaySeconds setting
+            if (int.TryParse(textBox1.Text, out var delaySeconds))
+            {
+                Properties.Settings.Default.DelaySeconds = delaySeconds;
+                Properties.Settings.Default.Save();
+            }
         }
 
         private async void Button1_Click(object sender, EventArgs e)
@@ -53,7 +65,6 @@ namespace SPTQL
         {
             try
             {
-                
                 if (serverProcess != null && !serverProcess.HasExited)
                 {
                     serverProcess.Kill();
@@ -70,15 +81,15 @@ namespace SPTQL
                 statusLabel.Text = "Ready";
             }
             catch (Exception)
-            {                
+            {
                 statusLabel.Text = "Error Closing";
             }
         }
 
         private async void Button3_Click(object sender, EventArgs e)
         {
-            string serverPath = Properties.Settings.Default.ServerPath;
-            string launcherPath = Properties.Settings.Default.LauncherPath;
+            var serverPath = Properties.Settings.Default.ServerPath;
+            var launcherPath = Properties.Settings.Default.LauncherPath;
 
             if (string.IsNullOrEmpty(serverPath) || string.IsNullOrEmpty(launcherPath))
             {
@@ -101,7 +112,7 @@ namespace SPTQL
                 };
                 launcherProcess = Process.Start(launcherStartInfo);
                 statusLabel.Text = "Server Launched";
-                await Task.Delay(2000); // Wait for 5 seconds
+                await Task.Delay(2000); // Wait for 2 seconds
                 statusLabel.Text = "Ready";
 
                 await Task.Delay(delaySeconds * 1000); // Wait for the specified seconds
@@ -113,7 +124,7 @@ namespace SPTQL
                 };
                 serverProcess = Process.Start(serverStartInfo);
                 statusLabel.Text = "Launcher Launched";
-                await Task.Delay(2000); // Wait for 5 seconds
+                await Task.Delay(2000); // Wait for 2 seconds
                 statusLabel.Text = "Ready";
             }
             catch (Exception)
@@ -127,7 +138,7 @@ namespace SPTQL
             var configEditorUI = new ConfigEditor();
             configEditorUI.Show();
             statusLabel.Text = "Config Editor Launched";
-            await Task.Delay(2000); // Wait for 5 seconds
+            await Task.Delay(2000); // Wait for 2 seconds
             statusLabel.Text = "Ready";
         }
     }
