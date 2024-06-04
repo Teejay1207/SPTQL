@@ -1,0 +1,14 @@
+C:\Users\teeja\source\repos\SPTQL\bin\Release\SPTQL.exe.config
+C:\Users\teeja\source\repos\SPTQL\bin\Release\SPTQL.exe
+C:\Users\teeja\source\repos\SPTQL\bin\Release\SPTQL.pdb
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.csproj.AssemblyReference.cache
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.Form1.resources
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.Properties.Resources.resources
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.csproj.GenerateResource.cache
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.csproj.CoreCompileInputs.cache
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.exe
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.pdb
+C:\Users\teeja\source\repos\SPTQL\bin\Release\Newtonsoft.Json.dll
+C:\Users\teeja\source\repos\SPTQL\bin\Release\Newtonsoft.Json.xml
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.csproj.Up2Date
+C:\Users\teeja\source\repos\SPTQL\obj\Release\SPTQL.ConfigEditor.resources

@@ -1,0 +1,10 @@
+C:\Users\teeja\source\repos\SPTQL\obj\Debug\SPTQL.csproj.AssemblyReference.cache
+C:\Users\teeja\source\repos\SPTQL\obj\Debug\SPTQL.Form1.resources
+C:\Users\teeja\source\repos\SPTQL\obj\Debug\SPTQL.Properties.Resources.resources
+C:\Users\teeja\source\repos\SPTQL\obj\Debug\SPTQL.csproj.GenerateResource.cache
+C:\Users\teeja\source\repos\SPTQL\obj\Debug\SPTQL.csproj.CoreCompileInputs.cache
+C:\Users\teeja\source\repos\SPTQL\bin\Debug\SPTQL.exe.config
+C:\Users\teeja\source\repos\SPTQL\bin\Debug\SPTQL.exe
+C:\Users\teeja\source\repos\SPTQL\bin\Debug\SPTQL.pdb
+C:\Users\teeja\source\repos\SPTQL\obj\Debug\SPTQL.exe
+C:\Users\teeja\source\repos\SPTQL\obj\Debug\SPTQL.pdb
